@@ -55,9 +55,9 @@ or simply go directly to http://playingcards.io/room/new/generic
 1. On the Layers tab select Card Face and delete all layers
 1. Add the following Text layers as *Different Per-Card*:
     
-    i. Field name: suit
-    i. Field name: rank
-    i. Field name: threat
+    - Field name: suit
+    - Field name: rank
+    - Field name: threat
     
 1. Change the font size and alignment to your liking
 1. On General you can change the size of the cards if you want

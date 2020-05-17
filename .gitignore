@@ -127,3 +127,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+
+# EoP
+cards.yaml
+eop.yaml
+playingcards_eop.csv
+
+
+.vscode/

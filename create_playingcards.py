@@ -1,6 +1,6 @@
-# Downloads the latest cards.yaml from Adam Shostack's git, append the Privacy suit and create a CVS to upload to playcards.io
+# Downloads the latest cards.yaml from Adam Shostack's git, append the Privacy suit and create a CSV to upload to playcards.io
 
-PLAYINGCARDS_CVS = "playingcards_eop.csv"
+PLAYINGCARDS_CSV = "playingcards_eop.csv"
 CARDS_GITHUB_RAW_URL = "https://raw.githubusercontent.com/adamshostack/eop/master/cards.yaml"
 CARDS_YAML = "eop.yaml"
 EXPANSION_YAML = "expansion_cards.yaml"
@@ -33,13 +33,13 @@ for suit in expansion_cards["suit_order"]:
 #create a new file with merged yaml
 yaml.dump(cards,open(CARDS_YAML, 'w'))
 
-#parse complete yaml and export to cvs
+#parse complete yaml and export to csv
 print("decks merged to:",CARDS_YAML)
 cards = yaml.safe_load(open(CARDS_YAML))
-print("exporting to cvs")
+print("exporting to csv")
 
-with open(PLAYINGCARDS_CVS, "w") as cvsfile:
-    wr = csv.writer(cvsfile, lineterminator="\n")
+with open(PLAYINGCARDS_CSV, "w") as csvfile:
+    wr = csv.writer(csvfile, lineterminator="\n")
     # wr.writeheader()
     wr.writerow(["label", "suit", "rank", "threat"])
     for suit in cards["suit_order"]:
@@ -48,4 +48,4 @@ with open(PLAYINGCARDS_CVS, "w") as cvsfile:
             wr.writerow(["".join([str(rank), " of ", suit]), suit, rank, threat])
             # print(suit,rank,threat)
 
-print("exported to:",PLAYINGCARDS_CVS)
+print("exported to:",PLAYINGCARDS_CSV)

@@ -20,7 +20,7 @@ If you're looking for a physical copy, you can order it from [Agilestationery](h
 
 ## Deck with the up-to-date text
 
-This script downloads the latest cards.yaml that has the latest changes, from Adam Shostack's git repo, append the Privacy suit and create a CSV to upload to playcards.io
+This script downloads cards.yaml that has the latest changes, from Adam Shostack's [git repo](https://github.com/adamshostack/eop), append the Privacy suit and create a CSV to upload to playcards.io
 
 ### Setup
 
@@ -133,16 +133,16 @@ Draw a diagram of the system you want to threat model before you deal the cards.
 Points:
 1 for a threat on your card, +1 for taking the trick
 
-Threats should be articulated clearly, testable, and addressable. In the event that a threat leads to an argument, you can resolve it by asking the question: “Would we take an actionable bug, feature request or design change for that?” If the answer is yes, it is a real threat. (This doesn’t mean that threats outside of that aren’t real, it’s simply a way to focus discussion on actionable threats.) 
+Threats should be articulated clearly, testable, and addressable. In the event that a threat leads to an argument, you can resolve it by asking the question: “Would we take an actionable bug, feature request or design change for that?” If the answer is yes, it is a real threat. (This doesn’t mean that threats outside of that aren’t real, it’s simply a way to focus discussion on actionable threats.)<br> 
 Questions that start with “There’s a way” should be read as “There’s a way…and here’s how…” while questions that start with “Your code” should be read “The code we’re collectively creating…and here’s how.”
 
-The deck contains a number of special cards: trumps and open threats. EoP cards are trumps: They take the trick even if they have a lower value than the suit that was led. 
-The ace of each suit is an open threat card. When played, the player must identify a threat not listed on another card.
+The deck contains a number of special cards: trumps and open threats. EoP cards are trumps: They take the trick even if they have a lower value than the suit that was led.<br> 
+The ace of each suit is an open threat card. When played, the player must identify a threat not listed on another card.<br>
 When all the cards have been played, whoever has the most points wins.
 
 Optional variants:
-• You may pass cards after the third trick. This is helpful if you have cards that you can’t tie to the system. Someone else may be able to.
-• Double the number of points, and give one point for threats on other people’s cards.
-• Other players may “riff” on the threat and if they do, they get one point per additional threat.
-• Limit riffing to no more than 60 seconds.
-• Mark up the diagram where the threat occurs.
+- You may pass cards after the third trick. This is helpful if you have cards that you can’t tie to the system. Someone else may be able to.
+- Double the number of points, and give one point for threats on other people’s cards.
+- Other players may “riff” on the threat and if they do, they get one point per additional threat.
+- Limit riffing to no more than 60 seconds.
+- Mark up the diagram where the threat occurs.
